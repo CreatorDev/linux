@@ -139,8 +139,7 @@ quiet_cmd_itb-image = ITB     $@
 		env PATH="$(objtree)/scripts/dtc:$(PATH)" \
 		$(CONFIG_SHELL) $(MKIMAGE) \
 		-D "-I dts -O dtb -p 500 \
-			--include $(objtree)/arch/mips \
-			--warning no-unit_address_vs_reg" \
+			--include $(objtree)/arch/mips" \
 		-f $(2) $@
 
 $(obj)/vmlinux.itb: $(obj)/vmlinux.its $(obj)/vmlinux.bin FORCE

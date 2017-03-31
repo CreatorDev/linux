@@ -403,6 +403,7 @@ config MACH_PISTACHIO
 	select SYS_HAS_EARLY_PRINTK
 	select USE_GENERIC_EARLY_PRINTK_8250
 	select USE_OF
+	select BUILTIN_DTB
 	help
 	  This enables support for the IMG Pistachio SoC platform.
 
